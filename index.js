@@ -1,7 +1,8 @@
 // index.js
+//initial setup for  Express + MongoDB application startewr version 
 require('dotenv').config();
 const express = require('express');
-const connectDB = require('./config/db');
+const connectDB = require('./Config/db');
 const usersRouter = require('./routes/users');
 const errorHandler = require('./middleware/errorHandler');
 
