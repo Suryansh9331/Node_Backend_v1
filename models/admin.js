@@ -1,4 +1,3 @@
-//admin specific functionality 
 // routes/admin.js
 const express = require('express');
 const bcrypt = require('bcryptjs');

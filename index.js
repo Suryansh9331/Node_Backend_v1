@@ -1,5 +1,4 @@
-// index.js
-// Express + MongoDB starter with User and Admin functionality
+
 
 require('dotenv').config();
 const express = require('express');
