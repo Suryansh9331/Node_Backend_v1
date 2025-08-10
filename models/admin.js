@@ -2,7 +2,7 @@
 // routes/admin.js
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const Admin = require('../models/Admin');
+const Admin = require('../models/admin');
 const router = express.Router();
 
 // POST /api/admin/register
