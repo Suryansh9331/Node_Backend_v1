@@ -1,4 +1,3 @@
-//admin route setup start documentation 
 // models/Admin.js
 const mongoose = require('mongoose');
 

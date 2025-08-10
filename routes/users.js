@@ -13,7 +13,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-// POST /api/users - create a new user
+//
 router.post('/', async (req, res, next) => {
   try {
     const { name, email } = req.body;
