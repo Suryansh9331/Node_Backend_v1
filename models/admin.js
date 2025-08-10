@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const Admin = require('../models/admin');
 const router = express.Router();
 
-// POST /api/admin/register
+
 router.post('/register', async (req, res, next) => {
   try {
     const { username, email, password } = req.body;

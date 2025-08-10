@@ -10,7 +10,7 @@ const errorHandler = require('./middleware/errorHandler');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Connect to MongoDB
+
 connectDB();
 
 // Middleware to parse JSON requests

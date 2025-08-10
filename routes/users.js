@@ -30,7 +30,7 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-// GET /api/users/:id - get user by id
+
 router.get('/:id', async (req, res, next) => {
   try {
     const user = await User.findById(req.params.id);
