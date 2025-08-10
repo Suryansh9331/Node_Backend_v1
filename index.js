@@ -1,9 +1,10 @@
 // index.js
-//initial setup for  Express + MongoDB application startewr version 
+// Initial setup for Express + MongoDB application with Admin + User functionality
 require('dotenv').config();
 const express = require('express');
-const connectDB = require('./Config/db');
+const connectDB = require('./config/db'); // ensure 'config' is lowercase if your folder is lowercase
 const usersRouter = require('./routes/users');
+const adminRouter = require('./routes/admin'); // <-- Import admin routes
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
@@ -20,6 +21,7 @@ app.get('/', (req, res) => res.send('Hello from Express + MongoDB!'));
 
 // API routes
 app.use('/api/users', usersRouter);
+app.use('/api/admin', adminRouter); // <-- Add admin routes here
 
 // 404 handler
 app.use((req, res, next) => {
