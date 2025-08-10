@@ -3,7 +3,7 @@
 
 require('dotenv').config();
 const express = require('express');
-const connectDB = require('./config/db'); // Make sure the folder name is lowercase 'config'
+const connectDB = require('./config/db'); // Make 
 const usersRouter = require('./routes/users');
 const adminRouter = require('./routes/admin');
 const errorHandler = require('./middleware/errorHandler');
