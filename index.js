@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 // API routes
 app.use('/api/users', usersRouter);   
-app.use('/api/admin', adminRouter);   // Admin routes
+app.use('/api/admin', adminRouter);   
 
 // 404
 app.use((req, res, next) => {
