@@ -21,10 +21,10 @@ app.get('/', (req, res) => {
 });
 
 // API routes
-app.use('/api/users', usersRouter);   // User routes
+app.use('/api/users', usersRouter);   
 app.use('/api/admin', adminRouter);   // Admin routes
 
-// 404 Not Found handler
+// 404
 app.use((req, res, next) => {
   res.status(404).json({ message: 'Not Found' });
 });
